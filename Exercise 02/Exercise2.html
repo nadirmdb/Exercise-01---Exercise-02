@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Form - Bachiri Mohamed Nadir</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <h1>Form</h1>
+    <form method="post" action='test1.php'>
+      <fieldset>
+        <label for="first-name">Enter your full name: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="email">Enter Your email: <input id="email" name="email" type="email" required /></label>
+        <label for="new-password">Create a new password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Account type (required)</legend>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" checked /> Personal</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business</label>
+      </fieldset>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+
+
